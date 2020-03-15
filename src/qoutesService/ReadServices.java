@@ -7,9 +7,14 @@ import java.util.List;
 import java.util.Scanner;
 
 public class ReadServices {
-    Scanner scanner = new Scanner(new FileReader("qoutes.txt"));
+    String nameOfFile;
+    Scanner scanner = new Scanner(new FileReader(nameOfFile));
     private int id = 0;
-
+    
+    public ReadServices(String nameOfFile){
+    this.nameOfFile = nameOfFile;
+    }
+    
     public ReadServices() throws FileNotFoundException {
     }
 

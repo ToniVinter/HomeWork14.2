@@ -13,8 +13,7 @@ public class QoutesService {
 
     public List<String> getAllQoutes() {
         List<String> listOfQoutes = new ArrayList<>();
-        for (Qoutes qoutes : qoutesAndAuthorList
-        ) {
+        for (Qoutes qoutes : qoutesAndAuthorList) {
             listOfQoutes.add(qoutes.getQoute());
         }
         return listOfQoutes;
@@ -50,8 +49,7 @@ public class QoutesService {
 
     public List<Qoutes> getFavourites() {
         List<Qoutes> listOfFavourites = new ArrayList<>();
-        for (Qoutes qoutes : qoutesAndAuthorList
-        ) {
+        for (Qoutes qoutes : qoutesAndAuthorList) {
             if (qoutes.isFavourite()) {
                 listOfFavourites.add(qoutes);
             }
