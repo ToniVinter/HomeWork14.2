@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class ReadServices {
+public class ReadServices throws IOException{
     String nameOfFile;
     Scanner scanner = new Scanner(new FileReader(nameOfFile));
     private int id = 0;
@@ -15,8 +15,6 @@ public class ReadServices {
     this.nameOfFile = nameOfFile;
     }
     
-    public ReadServices() throws FileNotFoundException {
-    }
 
     public List<Qoutes> readQoutes(){
         List<Qoutes> qoutesList = new ArrayList<>();
